@@ -16,7 +16,7 @@ const newUserFormSchema = z.object({
 
 type NewUserFormInputs = z.infer<typeof newUserFormSchema>
 
-export default function Users() {
+export default function User() {
   const {
     register,
     handleSubmit,
@@ -33,24 +33,26 @@ export default function Users() {
     console.log(data)
 
     if (data.password === data.confirmPassword) {
-      await api.post('users', {
+      await api.post('/users', {
         name,
         password,
       })
       reset()
-      await router.push('/')
+      router.push('/')
     } else {
       alert('Os campos senha e confirmar senha não são iguais')
     }
   }
   return (
     <div>
-      <Header />
-      <div className="px-44 py-20">
-        <h1 className=" flex justify-center text-4xl text-gray-100">
+      <div className="p-4 md:p-0">
+        <Header />
+      </div>
+      <div className="p-4 py-5 md:px-44 md:py-20">
+        <h1 className=" flex justify-center text-2xl text-gray-100 md:text-4xl">
           Cadastro de Usuario
         </h1>
-        <div className="mx-auto mt-10 max-w-xl border-2 border-gray-500 p-4">
+        <div className="mx-auto mt-10 max-w-xs border-2 border-gray-500 p-4 md:max-w-xl">
           <form onSubmit={handleSubmit(handleCreateNewUser)}>
             <div className="flex min-w-full flex-col px-4">
               <label htmlFor="" className="text-sm font-bold text-gray-200">
@@ -118,7 +120,7 @@ export default function Users() {
         <div className="mx-auto mt-4 flex flex-col items-center justify-center gap-2 text-lg text-gray-300">
           <span>Ja possui uma conta?</span>
           <Link href={'/'}>
-            <button className="flex w-[576px] max-w-xl justify-center border border-gray-600 bg-gray-200 p-2 text-sm font-bold text-gray-400 hover:text-black">
+            <button className="flex w-[320px] max-w-xs justify-center border border-gray-600 bg-gray-200 p-2 text-sm font-bold text-gray-400 hover:text-black md:w-[576px] md:max-w-xl">
               FAÇA LOGIN
             </button>
           </Link>
