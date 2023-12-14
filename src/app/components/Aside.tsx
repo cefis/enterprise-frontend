@@ -4,13 +4,6 @@ import { usePathname } from 'next/navigation'
 import NextLink from 'next/link'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import { BookOpenCheck, GraduationCap, LogOut, User2 } from 'lucide-react'
-import { useContext } from 'react'
-// import { AuthContext } from '@/context/AuthContext'
-
-// interface LinkProps {
-//  href: string
-//  props: HTMLAttributes<HTMLAnchorElement>
-// }
 
 const Link = ({ href, ...props }: any) => {
   const router = usePathname()
@@ -28,9 +21,6 @@ const Link = ({ href, ...props }: any) => {
 }
 
 export default function Aside() {
-  //  const { user } = useContext(AuthContext)
-  //  console.log(user)
-
   return (
     <div className="px-24 py-10">
       <div className="flex h-[800px] max-h-[988px] max-w-[242px] flex-col justify-between rounded-xl bg-gradient-to-t from-gray-600 via-gray-700 to-gray-700 px-14 py-10">

@@ -5,31 +5,31 @@ import Header from '../components/Header'
 export default function Home() {
   return (
     <div>
-      <div className="hidden md:flex">
+      <div className="hidden lg:flex">
         <Header />
       </div>
-      <div className="flex flex-col justify-between p-4 md:flex-row md:px-44">
+      <div className="mx-auto flex flex-col items-center justify-center p-4 lg:flex-row lg:px-44">
         <div>
-          <h1 className="text-4xl font-bold text-gray-100 md:p-0 md:text-9xl">
+          <h1 className="text-4xl font-bold text-gray-100 lg:p-0 lg:text-9xl">
             CEFIS.
           </h1>
           <h2 className="mt-4 text-2xl font-bold text-gray-100">
             BEM-VINDO AO FUTURO DO CONHECIMENTO.
           </h2>
-          <h2 className="mt-2 max-w-xs text-sm text-gray-200 md:mt-0 md:max-w-3xl md:text-lg ">
+          <h2 className="mt-2 max-w-xs text-sm text-gray-200 lg:mt-0 lg:max-w-3xl lg:text-lg ">
             A CEFIS é a solução de atualização e capacitação corporativa. Baixe
             as aulas em seu celular para estudar offline e assista quando
             preferir, onde quiser. São milhares de aulas disponíveis, além de
             novas aulas toda semana.
           </h2>
         </div>
-        <div className="mt-2 md:mt-0">
+        <div className="mt-2 lg:mt-0">
           <Image
             src={'/devices-courses.png'}
             alt=""
             width={600}
             height={500}
-            className="max-w-xs md:max-w-xl"
+            className="max-w-xs lg:max-w-xl"
             priority
           />
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="mt-5 flex h-auto justify-between bg-gray-800 py-8 md:px-44">
+    <header className="flex h-auto justify-between bg-gray-800 py-8 lg:px-44">
       <div className="flex items-center gap-2 text-2xl font-bold">
         <Link href={'/'}>
           <h1 className="text-gray-100">CEFIS</h1>

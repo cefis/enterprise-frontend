@@ -45,14 +45,14 @@ export default function User() {
   }
   return (
     <div>
-      <div className="p-4 md:p-0">
+      <div className="p-4 lg:p-0">
         <Header />
       </div>
-      <div className="p-4 py-5 md:px-44 md:py-20">
-        <h1 className=" flex justify-center text-2xl text-gray-100 md:text-4xl">
+      <div className="p-4 py-5 lg:px-44 lg:py-20">
+        <h1 className=" flex justify-center text-2xl text-gray-100 lg:text-4xl">
           Cadastro de Usuario
         </h1>
-        <div className="mx-auto mt-10 max-w-xs border-2 border-gray-500 p-4 md:max-w-xl">
+        <div className="mx-auto mt-10 max-w-xs border-2 border-gray-500 p-4 lg:max-w-xl">
           <form onSubmit={handleSubmit(handleCreateNewUser)}>
             <div className="flex min-w-full flex-col px-4">
               <label htmlFor="" className="text-sm font-bold text-gray-200">
@@ -120,7 +120,7 @@ export default function User() {
         <div className="mx-auto mt-4 flex flex-col items-center justify-center gap-2 text-lg text-gray-300">
           <span>Ja possui uma conta?</span>
           <Link href={'/'}>
-            <button className="flex w-[320px] max-w-xs justify-center border border-gray-600 bg-gray-200 p-2 text-sm font-bold text-gray-400 hover:text-black md:w-[576px] md:max-w-xl">
+            <button className="flex w-[320px] max-w-xs justify-center border border-gray-600 bg-gray-200 p-2 text-sm font-bold text-gray-400 hover:text-black lg:w-[576px] lg:max-w-xl">
               FAÇA LOGIN
             </button>
           </Link>
